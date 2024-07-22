@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after phesudo selector</title>
+    <style>
+         body{
+            background-color: black;
+            margin: 0%;
+            padding: 0%;
+            color: white; 
+            text-align: center;
+            justify-content: center; 
+             background-image: ;
+
+         }
+        
+         .navigation{
+            font-size: 20px;
+            display: flex; 
+         }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+    }
+    section::before{
+        content: "this is a content";
+    }
+    h3{
+        font-size: 4rem;
+
+    }
+    p{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+     <header>
+         <nav class="navbar">
+         <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact us</li>
+        </ul>
+    </nav>
+    <section>
+        <h3>welcome to the coding world</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam nesciunt nulla est repudiandae minima rerum, consequatur quas eaque architecto cupiditate? Expedita voluptatem, dolore nisi libero exercitationem ex quae veniam?
+    </header>
+</section>
+<hr>  
+</body>
+</html>

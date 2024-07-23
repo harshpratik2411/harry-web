@@ -5,24 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            display: flex;
+            padding: 23px 12px;
+            border: 2px solid rgb(176, 248, 146);
+            margin: 23px 12px;
+            background-color: cream;
+            box-shadow: 8px 9px 25px rgb(16, 177, 123);
+            text-align: center;
+        }
+
+        p {
+            color: rgba(168, 7, 7, 0.832);
+            text-decoration: double;
+            padding: 13px 7px;
+            text-shadow: 1px 1px rgb(198, 101, 101);
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="card" id="car-1">
-            car 1
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda pariatur dolore ullam, amet
+                temporibus voluptates inventore corrupti rerum iusto, magni </p>
         </div>
-        <div class="card" id="car-2">
-
-        </div>
-        <div class="card" id="car-3">
-
-        </div>
-        <div class="card" id="car-4">
-
-        </div>
-
-    </div>
+        <div class="container">
+            <div class="card" id="car-2">
+                <h3>card 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda pariatur dolore ullam, amet
+                    temporibus voluptates inventore corrupti rerum iusto, magni </p>
+            </div>
+            <div class="container">
+                <div class="card" id="car-3">
+                    <h3>card 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda pariatur dolore ullam, amet
+                        temporibus voluptates inventore corrupti rerum iusto, magni </p>
+                </div> 
 </body>
 
 </html>

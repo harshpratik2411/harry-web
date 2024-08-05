@@ -14,9 +14,12 @@
   <script>
     console.log("This is tut48");
      let freinds = ["harsh", "rohan" ,"sanjeev" ,"riya" ,"deepti"];
-     for (let index = 0; index < freinds.length; index++) {
-       console.log("hello freind, "+  freinds[index]);
+    //  for (let index = 0; index < freinds.length; index++) {
+    //    console.log("hello freind, "+  freinds[index]);}
+    //  either we can use loop or we can use the function
+    freinds.forEach( function f(element){
+    console.log("hello freind , " + element + " to modern javascript");
+     });
         
-     }
   </script> 
 </html>

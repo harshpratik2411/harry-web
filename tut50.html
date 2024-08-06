@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: aliceblue;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae at nulla exercitationem
+            placeat nisi voluptates! Rem, magni expedita in adipisci quas quaerat. Laborum nesciunt eveniet provident
+            ipsa accusamus debitis molestias sunt aut similique nobis, dolorum et, optio veritatis illum aliquid natus
+            consequuntur? Ducimus quos porro, non dignissimos pariatur officiis, at asperiores eius voluptates sit, quod
+            natus voluptatibus vel quidem necessitatibus illo maiores a beatae doloribus? Rem earum laboriosam iure est
+            commodi non, aliquam minima id dolorem nemo. In doloremque, at pariatur animi repellat veritatis voluptates
+            quos impedit ipsa, corrupti deleniti ab provident et facilis consequatur voluptatum totam molestiae
+            blanditiis nesciunt sapiente qui est earum eveniet molestias recusandae modi repellendus eaque rem saepe
+            adipisci, reiciendis porro nostrum. Cumque veritatis ex, rerum necessitatibus deleniti minus? Praesentium
+            quisquam, eligendi quam pariatur voluptatem tenetur nostrum fugit, fuga facere nemo est excepturi quia quae
+            id et dolore alias? Reprehenderit, aperiam sunt commodi cumque qui eum excepturi eaque distinctio inventore
+            quisquam modi explicabo consequatur error sit incidunt rem delectus repellendus.</h1>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+</body>
+<script>  
+         let para = document.getElementById('para');
+         para.addEventListener('mouseover',function run(){
+            alert('Mouse Inside ,Get out');
+         });
+
+
+
+    function toggleHide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if (para.style.display != 'none') {
+            para.style.display = 'none';
+        }
+        else {
+            para.style.display = 'block';
+        }
+    }
+</script>
+
+</html>

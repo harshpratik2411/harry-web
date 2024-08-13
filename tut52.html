@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: antiquewhite;
+            border:2px solid black; 
+            padding: 34px;
+            margin: 4px; 
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         this is a container
+        current time is <span id="time"> </span>
     </div>
 </body>
 <script>
     console.log('this is  date and time tutorial');
-    
+    let now = new Date();
+    console.log(now); 
+   let newDate = new date (3020); 
+   console.log(newDate);
+   setInterval(updatetime,1000); 
+   function updatetime()  {
+     time.innerHTML =new date();
+   }
+   
 </script>
 </html>

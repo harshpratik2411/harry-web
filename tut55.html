@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON TUT</title>
+</head>
+
+<body>
+    <div class="container">this is json tut</div>
+    <script>
+        let JsonObj = {
+            name: "Harsh",
+            channel: "cdw",
+            friend: "Rahul", // Fixed typo: 'freind' to 'friend'
+            food: "elephant",
+        };
+
+        console.log(JsonObj);
+        let myjsonStr = JSON.stringify(JsonObj);
+        console.log(myjsonStr); 
+        // replace str 
+        myjsonStr =myjsonStr.replace('Harsh','marsh');
+        console.log(myjsonStr); 
+    </script>
+</body>
+
+</html>
